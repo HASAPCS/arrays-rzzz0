@@ -26,14 +26,14 @@ public class ArrayOperationsTest {
 
     @Test
     public void testReverseArray() {
-        int[] originalArray = {1, 2, 3, 4, 5};
-        int[] reversedArray = {5, 4, 3, 2, 1};
+        int[] originalArray = {1,2,3,4,5};
+        int[] reversedArray = {5,4,3,2,1};
         assertArrayEquals(reversedArray, ArrayOperations.reverseArray(originalArray));
     }
 
     @Test
     public void testSortArray() {
-        int[] originalArray = {5, 3, 4, 1, 2};
+        int[] originalArray = {5, 3, 4, 2, 1};
         int[] sortedArray = {1, 2, 3, 4, 5};
         ArrayOperations.sortArray(originalArray);
         assertArrayEquals(sortedArray, originalArray);
